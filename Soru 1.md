@@ -1,6 +1,6 @@
 #1980’den itibaren spor grubu bazında en çok madalya alan 1. 3. 5. ülkeyi bulalım.
 
-´´´SQL
+```SQL
 Select country,sport from
     (Select country,
     sport,
@@ -11,4 +11,4 @@ Select country,sport from
     group by country,sport
     )a 
 where num in (1,3,5);
-´´´
+```
