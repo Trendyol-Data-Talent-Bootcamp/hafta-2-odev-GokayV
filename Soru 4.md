@@ -34,7 +34,7 @@ RIGHT JOIN (SELECT
   *,
   farm_fingerprint(to_json_string( CONCAT(cdc_date, is_deleted, id, category) )) as _hash1
 FROM
-  gokay_varcok.content_category_20201222_00_59) t2
+  gokay_varcok.content_category_target) t2
 ON t1.id = t2.id
 WHERE t1._hash1 <> t2._hash1
 ```
